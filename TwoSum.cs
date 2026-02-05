@@ -9,9 +9,7 @@ public class HashMap {
             int y = target - nums[i];
 
             if(hash.ContainsKey(y))
-            {
                 return new int[]{hash[y], i};
-            }
             hash[nums[i]] = i;
         }
 
